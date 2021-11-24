@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainCardRobotComponent } from './main-card-robot/main-card-robot.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainCardRobotComponent
   ],
   imports: [
     BrowserModule,
