@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { MockRobots} from '../mock-robots';
+import { MockRobots} from './mock-robots.service';
 import { IRobot } from '../models/IRobot';
 
 @Injectable({

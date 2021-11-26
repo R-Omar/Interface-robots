@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { IRobot } from './models/IRobot';
+import { IRobot } from '../models/IRobot';
 
 @Injectable({
   providedIn: 'root',
