@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { IRobot } from 'src/app/models/IRobot';
 import { RobotService } from 'src/app/services/robot.service';
 
