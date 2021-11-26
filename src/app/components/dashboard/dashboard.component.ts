@@ -9,7 +9,7 @@ import { RobotService } from 'src/app/services/robot.service';
   styleUrls: ['./dashboard.component.css'],
 })
 export class DashboardComponent implements OnInit {
-  robots: Array<IRobot>;
+  robots: IRobot[];
   routeRobotId: number;
   mainRobot: IRobot;
 
@@ -38,7 +38,7 @@ export class DashboardComponent implements OnInit {
     return this.mainRobot;
   }
 
-  getSideRobotsList(): Array<IRobot> {
+  getSideRobotsList(): IRobot[] {
     return this.robots.filter((robot) => robot.id !== this.mainRobot.id);
   }
 }
