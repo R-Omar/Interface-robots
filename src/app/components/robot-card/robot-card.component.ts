@@ -20,17 +20,22 @@ export class MainRobotCardComponent implements OnInit {
 
   onChangeProgram(event) {
     this.selectedProg = event.target.value;
-    console.log(this.selectedProg);
     this.disableExecPro = !this.selectedProg;
   }
 
   onStartProgram(id: number) {
     if (this.selectedProg)
-      this.robotService.updateRobotProgram(id, this.selectedProg);
+        this.robotService.updateRobotProgram(id, this.selectedProg).subscribe(
+          (data) => (this.robot = data),
+          (error) => console.log(error)
+        )
   }
 
   onUpdateRobotStatus(id: number, status: string) {
-    this.robotService.updateRobotStatus(id, status);
+    this.robotService.updateRobotStatus(id, status).subscribe(
+      (data) => (this.robot = data),
+      (error) => console.log(error)
+      )
   }
 
   getStatusColor() {

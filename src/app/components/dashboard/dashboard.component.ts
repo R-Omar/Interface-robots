@@ -13,10 +13,7 @@ export class DashboardComponent implements OnInit {
   routeRobotId: number;
   mainRobot: IRobot;
 
-  constructor(
-    private robotService: RobotService,
-    private route: ActivatedRoute
-  ) {}
+  constructor(private robotService: RobotService,private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.robotService.getAllRobots().subscribe(
