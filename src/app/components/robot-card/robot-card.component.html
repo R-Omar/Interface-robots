@@ -65,9 +65,7 @@
           class="form-select form-select-sm"
           (change)="onChangeProgram($event)"
         >
-        <option value="">
-        choisir...
-      </option>
+          <option value="">choisir...</option>
           <option
             *ngFor="let programme of robot.programmes"
             value="{{ programme }}"

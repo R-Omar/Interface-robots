@@ -8,7 +8,7 @@ import { IRobot } from '../models/IRobot';
 })
 export class RobotService {
   private robotsSubject: BehaviorSubject<IRobot[]>;
-  private robots: Array<IRobot> 
+  private robots: Array<IRobot>;
 
   constructor() {
     this.robots = ROBOTS;

@@ -132,5 +132,5 @@ export const ROBOTS: IRobot[] = [
         valeur: null,
       },
     ],
-  }
+  },
 ];
